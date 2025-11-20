@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 
 
-const message = (process.env.MESSAGE || "Hello World").toUpperCase(); 
 
 app.get('/', (req, res) => {
     res.send(`Message: ${message}`);
